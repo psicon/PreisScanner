@@ -1,0 +1,34 @@
+<ion-view title="Gutscheine">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+   <ion-nav-buttons side="right">
+      <button ng-click="scanbarcode()" class="button button-clear button-icon icon-left ion-ios7-barcode-outline">
+         </button> 
+    <button class="button button-icon icon ion-ios7-search-strong" ng-click="showsearch()"></button>
+  </ion-nav-buttons>
+  
+  <ion-content class="has-header">
+       
+       <div  style="text-align:center;" ng-bind-html="myhtml">
+ 					{{myhtml}}
+       </div>  
+                  
+       <div class="list card">
+            <div class="item item-divider">25% bei XY für ZZ</div>
+            <div class="item item-body">
+                <div class="item item-thumbnail">
+                    <img src="http://psicon.de/preisscanner/img/icon.png">
+                    <h2>Nur begrenzte Zeit Lorem Ipsum dolor.. blabla</h2>
+                    <p>Gültig von 30.10.14 09:00 bis 01.11.14 21:00</p>
+                    <button class="button button-block button-outline button-stable button-icon-left ion-earth" ng-click="openlinkexternal('http://www.markendetektive.de/')" data-lang="de"> Webseite / Kontakt</button>
+                </div>
+            </div>
+            <div class="item item-divider">30.10.14 | 06:06 Uhr</div>
+        </div>
+        
+  </ion-content>
+
+   
+ 
+</ion-view>
